@@ -4,7 +4,9 @@ export const init = (f: (extension: Extension) => void): void => {
     f(devExtension);
 }
 
-export const devExtension: import('contentful-ui-extensions-sdk').Extension = {
+const schemaUrl = 'data:application/json,' + require('fs').readFileSync('./exampleSchema.json', { encoding: 'utf8' }).replace(/\s/g, '');
+
+const devExtension: import('contentful-ui-extensions-sdk').Extension = {
     field: {
         getValue() {
             return JSON.parse(localStorage.getItem('saved_data') || '{}');
@@ -17,5 +19,11 @@ export const devExtension: import('contentful-ui-extensions-sdk').Extension = {
     },
     window: {
         startAutoResizer() {}
+    },
+    parameters: {
+        installation: {},
+        instance: {
+            schemaUrl,
+        },
     },
 }

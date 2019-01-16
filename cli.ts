@@ -51,8 +51,8 @@ yargs.version(false).command('install', 'install the extension', yargs => {
             parameters: {
                 instance: [
                     {
-                        id: 'schema',
-                        name: 'Schema',
+                        id: 'schemaUrl',
+                        name: 'Schema URL',
                         required: true,
                         type: 'Symbol'
                     }

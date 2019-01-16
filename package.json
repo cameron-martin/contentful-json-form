@@ -10,7 +10,8 @@
     "cli": "ts-node ./cli.ts"
   },
   "files": [
-    "dist"
+    "dist",
+    "exampleSchema.json"
   ],
   "dependencies": {
     "@types/fs-extra": "^5.0.4",
