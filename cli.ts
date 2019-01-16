@@ -4,6 +4,7 @@ import fs from 'fs-extra';
 import os from 'os';
 import path from 'path';
 import { Record, String, Static } from 'runtypes';
+import packageJson from './package.json';
 
 const ContentfulConfig = Record({
     cmaToken: String,
@@ -47,7 +48,7 @@ yargs.version(false).command('install', 'install the extension', yargs => {
         extension: {
             fieldTypes: [{ type:"Object" }],
             name: "JSON Schema",
-            src: `https://unpkg.com/contentful-json-form@${argv.version}/dist/index.html`,
+            src: `https://unpkg.com/${packageJson.name}@${argv.version}/dist/index.html`,
             parameters: {
                 instance: [
                     {

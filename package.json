@@ -7,7 +7,7 @@
   "scripts": {
     "start": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html --public-url ./",
-    "cli": "ts-node ./cli.ts"
+    "cli": "ts-node --files ./cli.ts"
   },
   "files": [
     "dist",
