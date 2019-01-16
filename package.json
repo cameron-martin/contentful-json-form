@@ -1,6 +1,6 @@
 {
   "name": "contentful-json-form",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "main": "index.js",
   "author": "Cameron Martin <cameronmartin123@gmail.com>",
   "license": "MIT",
