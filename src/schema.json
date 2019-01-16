@@ -3,7 +3,6 @@
    "$schema": "http://json-schema.org/draft-07/schema#",
    "$id": "http://example.com/root.json",
    "type": "object",
-   "title": "The Root Schema",
    "required": [
      "name",
      "tags"
@@ -20,12 +19,10 @@
      "tags": {
        "$id": "#/properties/tags",
        "type": "array",
-       "title": "The Tags Schema",
+       "title": "Tags",
        "items": {
          "$id": "#/properties/tags/items",
          "type": "string",
-         "title": "The Items Schema",
-         "default": "",
          "examples": [
            "foo",
            "bar"
