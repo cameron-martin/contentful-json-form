@@ -1,5 +1,5 @@
 import { Extension } from 'contentful-ui-extensions-sdk';
- 
+
 export const init = (f: (extension: Extension) => void): void => {
     f(devExtension);
 }
