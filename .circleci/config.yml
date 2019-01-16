@@ -46,6 +46,9 @@ workflows:
   build-and-deploy:
     jobs:
       - build
+          filters:
+            tags:
+              only: /^v.*/
       - deploy:
           context: NPM Auth
           requires:
