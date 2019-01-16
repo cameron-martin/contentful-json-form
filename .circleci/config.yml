@@ -31,8 +31,8 @@ jobs:
       - run: yarn build
 
       - persist_to_workspace:
-        root: ~/repo
-        paths: .
+          root: ~/repo
+          paths: .
   deploy:
     <<: *defaults
     steps:
