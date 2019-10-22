@@ -19,7 +19,7 @@
     "@types/react-dom": "^16.0.11",
     "@types/react-jsonschema-form": "^1.0.12",
     "@types/yargs": "^12.0.5",
-    "bootstrap": "^3.0.0",
+    "bootstrap": "^3.4.1",
     "contentful-management": "^5.4.0",
     "contentful-ui-extensions-sdk": "^3.4.1",
     "fs-extra": "^7.0.1",
